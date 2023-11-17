@@ -1,0 +1,52 @@
+@import "@coreui/coreui/scss/coreui";
+@import '../../vars';
+
+.container {
+    width: 100vw;
+    position: absolute;
+    height: 40vh;
+    left: 20rem;
+  }
+  
+  .carousel-container {
+    z-index: 1;
+    position: relative;
+    top: -23.3rem;
+  }
+  
+  .presentation-container {
+    width: 25vw;
+    height: 40vh;
+    padding: 20px;
+    background-color: rgba(255, 94, 26, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    z-index: 2;
+    position: relative;
+    top: 0;
+  }
+  
+  
+  img {
+    height: 40vh;
+    width: 65vw;
+  }
+  
+  button {
+    background-color: $secondary-color;
+    border: solid 1px white;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 15px;
+    color: white;
+    padding: 1rem;
+    width: 10rem;
+  }
+
+  button:hover{
+    background-color: rgba(255, 255, 255, 0.253);
+    box-shadow: 10px 10px 0px 0px rgb(82, 82, 82);
+    transform: translate(-5px, -5px);
+    transition: 600ms;
+  }

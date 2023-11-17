@@ -1,0 +1,26 @@
+<div class="container">
+  
+  <div class="presentation-container">
+      <h2>Les 3 règles de la frugalité numérique</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam deleniti amet ex id voluptas, reprehenderit, perferendis repellat tenetur minus nobis similique numquam enim asperiores labore, aliquam explicabo in! Quibusdam, sequi.</p>
+      <button>Voir plus d'info</button>
+  </div>
+  
+  <div class="carousel-container">
+    <c-carousel (itemChange)="onItemChange($event)" [interval]="5000" transition="slide">
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides">
+          <img
+            [src]="slide.src"
+            alt="{{slide.title}}"
+            class="d-block"
+            loading="lazy"
+          />
+        </c-carousel-item>
+      </c-carousel-inner>
+    </c-carousel>
+  </div>
+
+
+</div>
+

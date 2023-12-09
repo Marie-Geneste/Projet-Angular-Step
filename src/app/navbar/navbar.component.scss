@@ -5,14 +5,15 @@ nav {
     width: 80vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 18rem;
+    justify-content: flex-end;
+    gap: 23.5rem;
     align-items: center;
     margin-bottom: 25px;
 }
 
 .logo {
     max-width: 80px;
+    margin-right: 10rem;
 }
 
 .logo img {
@@ -34,4 +35,24 @@ nav {
 
 .links ul li a{
     text-decoration: none;
+}
+
+.active {
+    border-bottom: 2px solid $primary-color;
+}
+
+.nav-icons {
+    background-color: rgb(229, 231, 233);
+    padding: 0.4rem 0.4rem 0.2rem 0.4rem;
+    border-radius: 50%;
+}
+
+.nav-icons:hover {
+    background-color: lightblue;
+}
+
+
+.toggle {
+    background-color: $primary-color;
+    color: white;
 }

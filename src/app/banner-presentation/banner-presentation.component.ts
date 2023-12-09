@@ -23,6 +23,6 @@ export class BannerPresentationComponent implements OnInit {
   }
 
   onItemChange($event: any): void {
-    console.log('Carousel onItemChange', $event);
+    //console.log('Carousel onItemChange', $event);
   }
 }

@@ -4,11 +4,12 @@
     </div>
     <div class="links">
         <ul>
-            <li><a routerLink="/">Home</a></li>
-            <li><a routerLink="/services">Services</a></li>
-            <li><a routerLink="/mission">Mission</a></li>
-            <li><a routerLink="/contact">Contact</a></li>
+            <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+            <li><a routerLink="/mission" routerLinkActive="active">Mission</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+            <li class="nav-icons" [ngClass]="{'toggle': isToggledDarkMode}" (click)="toggleBackgroundColorDarkMode()"><a routerLink="/"><img src="./../../assets/visibility_FILL0_wght400_GRAD0_opsz24.svg" alt="mode sombre"></a></li>
+            <li class="nav-icons" [ngClass]="{'toggle': isToggledLeaf}" (click)="toggleBackgroundColorLeaf()"><a routerLink="/"><img src="./../../assets/nest_eco_leaf_FILL0_wght400_GRAD0_opsz24.svg" alt="mode sombre"></a></li>
         </ul>
-        
     </div>
 </nav>

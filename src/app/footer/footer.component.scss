@@ -1,0 +1,51 @@
+@import '../../vars';
+
+.footer-main {
+    background-color: $primary-color;
+    height: 35rem;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    padding: 10rem;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.logo-step {
+    width: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+.exercia-container {
+    display: flex;
+    gap: 4rem;
+}
+
+.exercia {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+
+.footer-footer {
+    background-color: rgb(12, 12, 87);
+    color : grey;
+    padding: 2.5rem;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.logos {
+    width: 1.7rem;
+}
+
+.icons{
+    display: flex;
+    gap: 0.4rem;
+}

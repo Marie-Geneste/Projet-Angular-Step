@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  isToggledDarkMode: boolean = false;
+  isToggledLeaf: boolean = false;
 
+  toggleBackgroundColorDarkMode() {
+    this.isToggledDarkMode = !this.isToggledDarkMode;
+  }
+
+  toggleBackgroundColorLeaf() {
+    this.isToggledLeaf = !this.isToggledLeaf
+  }
 }
